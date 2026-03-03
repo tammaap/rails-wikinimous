@@ -1,0 +1,14 @@
+<div class="container mb-3 mt-3" id="article">
+  <h2><%= @article.title %></h2>
+  <div class="container mb-3 mt-3">
+    <%= link_to edit_article_path(@article) do %>
+      <i class="fas fa-pen me-2 text-secondary"></i>
+    <% end %>
+
+    <%= link_to article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } do %>
+      <i class="fa-solid fa-trash text-secondary"></i>
+    <% end %>
+  </div>
+  <p><%= @article.content %></p>
+  <%= link_to "Back", articles_path, class: "btn btn-primary"%>
+</div>

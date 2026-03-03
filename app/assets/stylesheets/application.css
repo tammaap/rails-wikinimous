@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+
+a {
+  text-decoration: none; /* removes underline */
+}
+
+a:hover {
+  text-decoration: underline; /* optional: underline on hover */
+}
+
+#articles, #article{
+  width: 700px;
+}
